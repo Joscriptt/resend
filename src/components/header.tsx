@@ -1,9 +1,9 @@
 import * as React from "react";
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { Bars3Icon } from "@heroicons/react/24/outline";
+
 import { cn } from "@/lib/utils";
+import Snowfall from "react-snowfall";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -17,6 +17,7 @@ import {
 export default function Header() {
   return (
     <header>
+      <Snowfall color="gray" snowflakeCount={10} />
       <div
         className="mx-auto  max-w-7xl items-center justify-between pt-6   lg:flex"
         aria-label="Global"
